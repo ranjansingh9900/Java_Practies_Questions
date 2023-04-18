@@ -138,3 +138,126 @@ class Main{
 
 
 
+  6. Write a Java program to print an American flag on the screen. Go to the editor
+Expected Output
+
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+==============================================                          
+==============================================                          
+==============================================                          
+==============================================                          
+==============================================                          
+==============================================
+
+
+// sol::
+
+import java.util.Scanner;
+
+class First_program {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        sc.close();
+        String p1 = "* * * * * * ==================================\n * * * * *  ==================================";
+        String p2 = "==============================================";
+        for (int i = 0; i < 4; i++) {
+            System.out.println(p1);
+        }
+        System.out.println("* * * * * * ==================================");
+        for (int i = 0; i < 6; i++) {
+            System.out.println(p2);
+        }
+
+    }
+}
+
+
+
+/ 7. Write a Java program to swap two variables.
+
+// sol::
+
+import java.util.Scanner;
+
+class First_program {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the first number: ");
+        int x = sc.nextInt();
+        System.out.println("enter the second number: ");
+        int y = sc.nextInt();
+        sc.close();
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println("first number : " + x + " second Number : " + y);
+
+    }
+}
+
+// other mathed 
+
+import java.util.Scanner;
+
+class First_program {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the first number: ");
+        int x = sc.nextInt();
+        System.out.println("enter the second number: ");
+        int y = sc.nextInt();
+        sc.close();
+        int temp;
+        temp = x;
+        x = y;
+        y = temp;
+
+        System.out.println("first number : " + x + " second Number : " + y);
+
+    }
+}
+
+
+
+/ 8. Write a Java program to print a face.
+// Expected Output
+
+//  +"""""+                                                 
+// [| o o |]                                                
+//  |  ^  |                                                 
+//  | '-' |                                                 
+//  +-----+
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        String[] arr = new String[5];
+        arr[0] = " +\"\"\"\"\"+ ";
+        arr[1] = "[| o o |]";
+        arr[2] = " |  ^  |";
+        arr[3] = " | '-' |";
+        arr[4] = " +-----+";
+        for (int i = 0; i < 5; i++) {
+            System.out.println(arr[i]);
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
