@@ -299,3 +299,31 @@ public class Main {
 
 
 
+import java.util.Scanner;
+
+class First_program {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long b1 = sc.nextInt();
+        long b2 = sc.nextInt();
+        int carry = 0;
+        int[] sum = new int[20];
+        int i = 0;
+        while (b1 != 0 || b2 != 0) {
+            sum[i++] = (int) ((b1 % 10 + b2 % 10 + carry) % 2);
+            carry = (int) ((b1 % 10 + b2 % 10 + carry) / 2);
+            b1 = b1 / 10;
+            b2 = b2 / 10;
+        }
+        if (carry != 0) {
+            sum[i++] = carry;
+        }
+        i--;
+        while (i >= 0) {
+            System.out.print(sum[i--] + "  ");
+        }
+
+    }
+}
+
+
